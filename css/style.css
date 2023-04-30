@@ -15,6 +15,8 @@ body {
 /* Removed min-width because some phones are narrower than 500px */
 
 header, footer {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   text-align: center;
   /* min-width: 500px; */
@@ -24,6 +26,9 @@ header, footer {
 header {
   font-family: 'Quattrocento', serif;
   color: #fff;
+  background-image: url('../images/unsplash.jpg');
+background-size: cover;
+background-position: center center;
   min-height: 100vh;
   display: flex;
 }
@@ -34,7 +39,7 @@ main {
   grid-template-rows: repeat(3, 1fr); */
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  margin-top: 44px;
+  margin: 44px 40px;
   /* grid-auto-rows: 1fr; */
   justify-items: center;
   justify-content: center;
@@ -119,6 +124,19 @@ img {
 
 }
 
+@media all and (max-width:700px) {
+  main {
+    grid-template-columns: 1fr;
+    margin: 44px auto;
+  }
+  .description {
+    font-size: 18px;
+  }
+  img {
+    height: 25vh;
+  }
+}
+
 .c {
 
 }
@@ -171,9 +189,28 @@ footer div {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   display: flex;
+  justify-content: space-between;
   align-content: center;
   padding: 10px 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+  margin: auto 0;
+}
+
+.icons {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.icons a {
+  margin: 0 8px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.icons a:hover {
+  color: rgb(255, 255, 255, 0.8);
 }
 
 
