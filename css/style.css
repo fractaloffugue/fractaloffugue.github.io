@@ -64,7 +64,7 @@ h2 {
   letter-spacing: 0.3px;
   text-align: left;
   color: #bb94d7;
-  padding: 10px 0px 10px 10px;
+  padding: 10px 20px 0 20px;
 }
 
 /* Added wrapper class, set some spacing. Remember, margin sets space outside of the box, while padding sets the space inside the box */
@@ -100,7 +100,7 @@ margin: 1.69em auto;
 }
 
 .myButton:hover {
-background-color:#e69708;
+  background-color: rgba(0,0,0,.2);
 }
 
 .myButton:active {
@@ -115,13 +115,9 @@ img {
   object-position: center top;
 }
 
-.recipe {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.project {
+  box-shadow: 0 0px 1px 0 rgb(0 0 0 / 40%);  
   width: 100%;
-}
-
-.a {
-
 }
 
 @media all and (max-width:700px) {
@@ -137,29 +133,6 @@ img {
   }
 }
 
-.c {
-
-}
-
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
-}
-
-.mins {
-  display: inline-block;
-  font-family: 'Lora', serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 5px;
-}
-
 .description {
   font-family: 'Quattrocento', serif;
   font-size: 14px;
@@ -168,15 +141,7 @@ img {
   letter-spacing: 0.1px;
   text-align: left;
   color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
-}
-
-.logo {
-  width: 115px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .container {
